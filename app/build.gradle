@@ -63,4 +63,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
 }
