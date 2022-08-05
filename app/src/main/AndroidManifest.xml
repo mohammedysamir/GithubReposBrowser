@@ -12,9 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GithubReposBrowser">
         <activity
-            android:name=".screens.SearchActivity"
-            android:exported="true"
-            android:theme="@style/Theme.GithubReposBrowser">
+            android:name=".screens.RepoDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.RepoListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.SearchScreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
