@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">GithubReposBrowser</string>
     <string name="title_activity_search">SearchActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab1_title">By Repository Name</string>
+    <string name="tab2_title">By User Name</string>
 </resources>
