@@ -1,4 +1,4 @@
-package com.myasser.githubreposbrowser.Adapters
+package com.myasser.githubreposbrowser.adapters
 
 import android.content.Intent
 import android.graphics.Paint
