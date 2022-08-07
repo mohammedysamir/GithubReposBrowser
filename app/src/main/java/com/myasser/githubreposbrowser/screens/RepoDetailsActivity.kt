@@ -10,3 +10,4 @@ class RepoDetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_repo_details)
     }
 }
+//todo: till now i don't have special need for this screen -> maybe deleted soon.
