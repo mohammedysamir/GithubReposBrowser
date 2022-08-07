@@ -6,4 +6,5 @@
     <string name="repository_language_label">Repository language</string>
     <string name="search_button_label">Search</string>
     <string name="user_name_label">User name</string>
+    <string name="no_repositories">No. Repositories: %1s</string>
 </resources>
