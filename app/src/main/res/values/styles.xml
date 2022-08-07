@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="editText_style">
-        <item name="android:layout_width">300dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#080808</item>
-        <item name="android:textColorHint">#222</item>
+
+    <style name="text_field_label_style">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
     </style>
 
-    <style name="button_style">
-        <item name="android:layout_width">150dp</item>
-        <item name="android:layout_height">50dp</item>
-        <item name="android:layout_marginTop">10dp</item>
+    <style name="text_field_style">
+        <item name="android:background">@drawable/text_field_semi_rounded</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontStyle">italic</item>
+        <item name="android:textColorHint">?attr/colorPrimaryVariant</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="primary_button_style">
+        <item name="android:background">@drawable/primary_button</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">210dp</item>
     </style>
 </resources>

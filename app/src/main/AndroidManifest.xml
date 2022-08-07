@@ -12,18 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GithubReposBrowser">
         <activity
-            android:name=".SearchActivity"
-            android:exported="true"
-            android:theme="@style/Theme.GithubReposBrowser">
+            android:name=".screens.RepoDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.RepoListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.SearchScreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"/>
     </application>
 
 </manifest>
