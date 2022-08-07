@@ -2,9 +2,16 @@ package com.myasser.githubreposbrowser.models
 
 import java.net.URL
 
-data class Repository(val name:String,val html_url:URL,val description:String,val language:String)
-
-data class Owner(val login:String, val avatar_url: URL,val html_url:URL,val repos_url:URL)
+data class Repository(
+    val name: String,
+    val html_url: URL,
+    val description: String,
+    val language: String,
+    val stargazers_count: Int,
+    val owner:Owner
+)
+//todo: when viewing user's repos use repos_url property
+data class Owner(val login: String, val avatar_url: URL, val html_url: URL, val repos_url: URL)
 /*
 [
   {
