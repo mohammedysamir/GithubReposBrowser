@@ -8,10 +8,15 @@ data class Repository(
     val description: String,
     val language: String,
     val stargazers_count: Int,
-    val owner:Owner
+    val owner: Owner,
 )
-//todo: when viewing user's repos use repos_url property
+
 data class Owner(val login: String, val avatar_url: URL, val html_url: URL, val repos_url: URL)
+data class Result(
+    val total_count: Int,
+    val incomplete_results: Boolean,
+    val items: List<Repository>,
+) //for fetching repos
 /*
 [
   {
