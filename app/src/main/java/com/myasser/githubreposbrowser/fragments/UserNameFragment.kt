@@ -57,6 +57,7 @@ class UserNameFragment : Fragment() {
                                     putExtra("name", userNameEditText.text.toString())
                                     putExtra("repo numbers", userRepositories.size.toString())
                                 })
+                                userNameEditText.setText("") //clear input field
                             } else {
                                 //notify user that user's name is not found
                                 Toast.makeText(context,

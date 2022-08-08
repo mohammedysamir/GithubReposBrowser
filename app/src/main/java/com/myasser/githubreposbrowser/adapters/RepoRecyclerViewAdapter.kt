@@ -40,7 +40,7 @@ class RepoRecyclerViewAdapter(private var repoList: ArrayList<Repository>) :
         holder.repoDescriptionTextView.text = repo.description
         holder.repoLanguageTextView.text = repo.language
         holder.repoStarsTextView.text = repo.stargazers_count.toString()
-        holder.userNameTextView.text = repo.owner.login
+        holder.userNameTextView.text = "${repo.owner.login}/"
         val context = holder.itemView.context
         Glide.with(context).load(Uri.parse(repo.owner.avatar_url.toString()))
             .into(holder.userImageView)

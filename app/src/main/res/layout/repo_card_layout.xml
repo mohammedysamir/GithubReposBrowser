@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="170dp"
-    android:layout_marginBottom="25dp"
+    android:layout_marginBottom="15dp"
     android:background="@android:color/transparent">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         app:cardBackgroundColor="?attr/colorPrimaryVariant"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="10dp">
+        app:cardCornerRadius="15dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -28,11 +27,11 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/userImage"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/profile_image"
+                    android:scaleType="centerCrop"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,9 +39,8 @@
                     android:id="@+id/userNameTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="UserName/"
-                    android:textColor="?attr/colorOnPrimary"
+                    android:layout_marginStart="10dp"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintLeft_toRightOf="@id/userImage"
@@ -52,9 +50,9 @@
                     android:id="@+id/repoNameTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:text="repo name"
-                    android:textColor="?attr/colorOnPrimary"
+                    android:layout_marginStart="5dp"
+                    android:maxLines="1"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="14sp"
                     app:layout_constraintLeft_toRightOf="@id/userNameTextView"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -66,8 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:maxLines="2"
-                android:text="descriptiondescriptiondescriptiondescriptiondescription"
-                android:textColor="?attr/colorOnPrimary"
+                android:textColor="?attr/colorPrimary"
                 android:textSize="14sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -86,8 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="15dp"
-                    android:text="e.g. python"
-                    android:textColor="?attr/colorOnPrimary"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="14sp" />
 
                 <ImageView
@@ -95,14 +91,13 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_baseline_star_outline_24"
-                    app:tint="?attr/colorOnPrimary" />
+                    app:tint="?attr/colorPrimary" />
 
                 <TextView
                     android:id="@+id/repoStarsTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="56"
-                    android:textColor="?attr/colorOnPrimary"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
