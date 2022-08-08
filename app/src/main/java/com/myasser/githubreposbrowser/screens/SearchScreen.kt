@@ -36,14 +36,16 @@ class SearchScreen : AppCompatActivity() {
         val fragmentList = arrayListOf(
             RepoNameFragment(), UserNameFragment()
         )
-        //define viewPager
-        viewPager = findViewById(R.id.searchViewPager)
-        viewPager.adapter = ViewPagerAdapter(supportFragmentManager, fragmentList)
-        viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
-        //define tabLayout
         tabLayout = findViewById(R.id.tabLayoutView)
+        viewPager = findViewById(R.id.searchViewPager)
+
+        //define tabLayout
         defineTabLayout()
         defineListener()
+
+        //define viewPager
+        viewPager.adapter = ViewPagerAdapter(supportFragmentManager, fragmentList)
+        viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
 
 
     }

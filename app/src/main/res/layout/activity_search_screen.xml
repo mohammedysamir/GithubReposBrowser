@@ -7,7 +7,7 @@
     android:background="?attr/colorPrimary"
     tools:context=".screens.SearchScreen">
 
-    <TableLayout
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayoutView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
