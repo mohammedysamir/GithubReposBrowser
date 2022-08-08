@@ -60,5 +60,6 @@ class RepoRecyclerViewAdapter(private var repoList: ArrayList<Repository>) :
 
     fun setList(repoList: ArrayList<Repository>) {
         this.repoList = repoList
+        notifyDataSetChanged()
     }
 }
