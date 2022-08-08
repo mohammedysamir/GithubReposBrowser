@@ -1,4 +1,4 @@
-package com.myasser.githubreposbrowser.Adapters
+package com.myasser.githubreposbrowser.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

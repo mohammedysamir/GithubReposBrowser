@@ -1,4 +1,4 @@
-package com.myasser.githubreposbrowser.Adapters
+package com.myasser.githubreposbrowser.adapters
 
 import android.content.Intent
 import android.graphics.Paint
@@ -40,7 +40,7 @@ class RepoRecyclerViewAdapter(private var repoList: ArrayList<Repository>) :
         holder.repoDescriptionTextView.text = repo.description
         holder.repoLanguageTextView.text = repo.language
         holder.repoStarsTextView.text = repo.stargazers_count.toString()
-        holder.userNameTextView.text = repo.owner.login
+        holder.userNameTextView.text = "${repo.owner.login}/"
         val context = holder.itemView.context
         Glide.with(context).load(Uri.parse(repo.owner.avatar_url.toString()))
             .into(holder.userImageView)
@@ -60,5 +60,6 @@ class RepoRecyclerViewAdapter(private var repoList: ArrayList<Repository>) :
 
     fun setList(repoList: ArrayList<Repository>) {
         this.repoList = repoList
+        notifyDataSetChanged()
     }
 }

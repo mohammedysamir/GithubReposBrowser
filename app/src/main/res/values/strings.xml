@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">GithubReposBrowser</string>
-    <string name="tab1_title">By Repository Name</string>
+    <string name="tab1_title">By Repository</string>
     <string name="tab2_title">By User Name</string>
     <string name="repository_name_label">Repository name</string>
     <string name="repository_language_label">Repository language</string>
     <string name="search_button_label">Search</string>
     <string name="user_name_label">User name</string>
     <string name="no_repositories">No. Repositories: %1s</string>
+    <string name="user_not_found_error">Sorry! We can\'t find user with provided name, try another name</string>
+    <string name="fetch_failure">Sorry! something went wrong, please try again later</string>
+    <string name="repo_not_found_error">Sorry! We can\'t find repository(ies) with provided name, try another name</string>
 </resources>
