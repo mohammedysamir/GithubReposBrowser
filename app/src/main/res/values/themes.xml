@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.ReposViewer" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.GithubReposBrowser" parent="android:Theme.Material.Light.NoActionBar">
         <item name="colorPrimary">@color/lightPrimary</item>
         <item name="colorPrimaryVariant">@color/lightPrimaryVariant</item>
         <item name="colorOnPrimary">@color/darkPrimary</item>
