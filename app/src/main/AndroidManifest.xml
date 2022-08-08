@@ -13,13 +13,16 @@
         android:theme="@style/Theme.GithubReposBrowser">
         <activity
             android:name=".screens.RepoDetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.GithubReposBrowser" />
         <activity
             android:name=".screens.RepoListActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.GithubReposBrowser" />
         <activity
             android:name=".screens.SearchScreen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.GithubReposBrowser">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

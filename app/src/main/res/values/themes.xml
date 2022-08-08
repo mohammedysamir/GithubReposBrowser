@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.GithubReposBrowser" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.GithubReposBrowser" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/lightPrimary</item>
         <item name="colorPrimaryVariant">@color/lightPrimaryVariant</item>
         <item name="colorOnPrimary">@color/darkPrimary</item>
         <item name="colorSecondary">@color/lightSecondary</item>
         <item name="colorOnSecondary">@color/lightPrimary</item>
-        <item name="android:statusBarColor">@color/lightPrimary</item>
+        <item name="android:statusBarColor">@color/lightPrimaryVariant</item>
     </style>
 </resources>
