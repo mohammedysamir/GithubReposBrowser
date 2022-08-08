@@ -2,6 +2,7 @@ package com.myasser.githubreposbrowser.screens
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.myasser.githubreposbrowser.R
@@ -19,6 +20,19 @@ class SearchScreen : AppCompatActivity() {
     companion object {
         private lateinit var retrofit: Retrofit
         lateinit var githubAPI: RepoRetrofitInterface
+
+        //make it suspend function so we can stop it
+        suspend fun buttonLoader(button: AppCompatButton, mainText: String, recurringText: String) {
+            //save old text (if we need it)
+            val oldText = button.text.toString()
+            //use recurring text and loop through
+            var i = 0
+            while (true) {
+                //assign new text + recurring substring of recurringText
+                button.text = "${mainText} ${recurringText.substring(0, i)}"
+                i = (i + 1) % recurringText.length //circular access
+            }
+        }
     }
 
     init {
