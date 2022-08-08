@@ -40,7 +40,6 @@ class SearchScreen : AppCompatActivity() {
         viewPager = findViewById(R.id.searchViewPager)
 
         //define tabLayout
-        defineTabLayout()
         defineListener()
 
         //define viewPager
@@ -50,17 +49,6 @@ class SearchScreen : AppCompatActivity() {
 
     }
 
-    private fun defineTabLayout() {
-        //add tabs
-        tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.tab1_title)))
-        tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.tab2_title)))
-        //define gravity
-        tabLayout.tabGravity = TabLayout.GRAVITY_FILL
-        //hook with adapter
-        tabLayout.setupWithViewPager(viewPager)
-    }
-
-    //todo: test if listener will be hooked
     private fun defineListener() {
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
